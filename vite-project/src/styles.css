@@ -1,0 +1,268 @@
+/* styles.css */
+/* Ensure the root container takes up full width */
+#root {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  height: 10vh;
+  background-color: #874f69;
+}
+
+.logo-img {
+  max-width: 70px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin-right: 100px;
+  font-size: 1.2rem;  
+  
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: lightblue
+}
+
+/* Style for the navigation links when focused */
+.nav-link a:focus {
+  outline: 2px solid blue; /* Change the color and style as needed */
+}
+
+/* Style for the navigation links when hovered */
+.nav-link a:hover {
+  background-color: red; /* Change the background color as needed */
+}
+
+/* Dropdown menu */
+.dropdown {
+position: relative;
+}
+
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+.dropdown-menu {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+z-index: 1000;
+min-width: 160px;
+padding: 8px 0;
+margin: 2px 0 0;
+font-size: 14px;
+background-color: #fff;
+border: 1px solid rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+.dropdown-menu li {
+list-style: none;
+}
+
+.dropdown-menu li a {
+display: block;
+padding: 10px 20px;
+color: #333;
+text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+background-color: #f5f5f5;
+}
+
+/* .d-flex container */
+.d-flex {
+display: flex;
+flex-direction: column;
+position: relative;
+height: 100vh; /* Adjusted for full viewport height */
+background-color: #731641;
+width: 100%; /* Set width to 100% to take up full width */
+}
+
+/* .my-slogan */
+.my-slogan {
+color: white;
+font-size: 3vw; /* Responsive font size */
+text-align: center; /* Center text horizontally */
+position: absolute;
+top: 50%;
+left: 58%;
+transform: translate(-80%, -50%); /* Center the element */
+width: 100%; /* Set width to 100% to take up full width */
+
+}
+
+/* .rohit-dangol */
+.rohit-dangol {
+color: lightblue;
+font-size: 4vw; /* Responsive font size */
+text-align: center; /* Center text horizontally */
+}
+
+/* .slogan */
+.slogan {
+font-size: 2vw; /* Responsive font size */
+text-align: center; /* Center text horizontally */
+}
+
+/* .d-flex-img */
+.d-flex-img {
+margin-right: 10px;
+position: absolute;
+height: auto; /* Maintain aspect ratio */
+border-radius: 10px;
+border: solid 3px lightblue;  
+width: calc(100vw - 800px); /* Adjust the value (400px) as needed */
+max-width: none; /* Disable max-width to allow stretching */
+right: 0; /* Adjust positioning as needed */
+height: 90vh;
+}
+
+/* Style for the social media icons container */
+.social-icons {
+  margin-top: 20px; /* Adjust as needed */
+}
+
+/* Style for each social media icon */
+.social-icons a {
+  display: inline-block;
+  margin-right: 70px; /* Adjust spacing between icons */
+}
+
+/* Style for Font Awesome icons */
+.social-icons a i {
+  font-size: 24px; /* Adjust icon size as needed */
+  color: blue; /* Adjust icon color */
+}
+
+/* Style for the footer */
+footer {
+  background-color: #731641;
+  color: black; /* Text color */
+  padding: 20px; /* Add padding for spacing */
+  text-align: center; /* Center-align text */
+  font-size: 2vw; /* Adjust font size */
+  font-weight: bold;
+}
+
+/* Style for links in the footer */
+footer a {
+  color: #fff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+/* Style for links in the footer when hovered */
+footer a:hover {
+  color: #007bff; /* Change color on hover */
+}
+.my-bg-container {
+  height: 60vh;
+  background-color: darkslategrey;
+}
+.quantum-bunker {
+  text-align: center;
+  color: burlywood; 
+  font-size: 55px; 
+  font-weight: bold; 
+  transform: translateY(+150%);
+  text-decoration: none;
+}
+.quantum-bunker:hover {
+  color: blueviolet; 
+  
+}
+
+
+
+
+ /* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header {
+      display: flex;
+      height: 5vh; /* Reduce header height for smaller screens */
+
+    }
+
+    .logo-img {
+        max-width: 50px; /* Adjust logo size for mobile */
+      
+    }
+    .nav-links {
+        display: none;
+    }
+  
+   /* Hamburger menu styling */
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff; /* Adjust color as needed */
+    margin: 4px 20px; /* Adjust spacing between bars */
+  }
+
+  .d-flex {
+    position: relative;
+  }
+  .my-slogan {
+    position: absolute;
+    top: 150px;
+    left: 580px; /* Set left position to 0 to stretch across the width */
+    width: 100%; /* Make the slogan stretch across the width */
+  }
+
+  .rohit-dangol {
+    color: yellow;
+    font-size: 5vw; /* Responsive font size */
+    text-align: center; /* Center text horizontally */
+    width: 100%; /* Make the text stretch across the width */
+  }
+  .d-flex-img {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    height: 40vh;
+    width: 100%; /* Initially set to 100% */
+    left: 0;
+  }
+
+}
