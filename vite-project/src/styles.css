@@ -138,7 +138,8 @@ text-align: center; /* Center text horizontally */
 
 /* .d-flex-img */
 .d-flex-img {
-margin-right: 10px;
+margin-right: 20px;
+margin-top: 30px;
 position: absolute;
 height: auto; /* Maintain aspect ratio */
 border-radius: 10px;
